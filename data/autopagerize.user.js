@@ -39,6 +39,12 @@ var SITEINFO = [
         exampleUrl:   '',
     },
     */
+    {
+        url:          '^http://b\.hatena\.ne\.jp/(topiclist|topic/.)',
+        nextLink:     '//*[contains(concat(" ", normalize-space(@class), " "), "pager")]//a',
+        pageElement:  '//*[contains(concat(" ", normalize-space(@class), " "), "topic-contents")]/*[not(contains(concat(" ", normalize-space(@class), " "), "topic-tab"))]',
+        exampleUrl:   'http://b.hatena.ne.jp/topiclist http://b.hatena.ne.jp/topiclist/2014/12 http://b.hatena.ne.jp/topic/261573028158462946',
+    },
 ]
 var MICROFORMAT = {
     url:          '.*',
